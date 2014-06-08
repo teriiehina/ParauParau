@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7899F721943DF9800202415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7899F711943DF9800202415 /* AppDelegate.swift */; };
+		D7899F741943DF9800202415 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7899F731943DF9800202415 /* MasterViewController.swift */; };
+		D7899F761943DF9800202415 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7899F751943DF9800202415 /* DetailViewController.swift */; };
+		D7899F791943DF9800202415 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7899F771943DF9800202415 /* Main.storyboard */; };
+		D7899F7B1943DF9800202415 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7899F7A1943DF9800202415 /* Images.xcassets */; };
+		D7899F871943DF9800202415 /* ParauParauTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7899F861943DF9800202415 /* ParauParauTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7899F811943DF9800202415 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7899F641943DF9800202415 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7899F6B1943DF9800202415;
+			remoteInfo = ParauParau;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D7899F6C1943DF9800202415 /* ParauParau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParauParau.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7899F701943DF9800202415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7899F711943DF9800202415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7899F731943DF9800202415 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		D7899F751943DF9800202415 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D7899F781943DF9800202415 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7899F7A1943DF9800202415 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D7899F801943DF9800202415 /* ParauParauTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParauParauTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7899F851943DF9800202415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7899F861943DF9800202415 /* ParauParauTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParauParauTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7899F691943DF9800202415 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7899F7D1943DF9800202415 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7899F631943DF9800202415 = {
+			isa = PBXGroup;
+			children = (
+				D7899F6E1943DF9800202415 /* ParauParau */,
+				D7899F831943DF9800202415 /* ParauParauTests */,
+				D7899F6D1943DF9800202415 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7899F6D1943DF9800202415 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7899F6C1943DF9800202415 /* ParauParau.app */,
+				D7899F801943DF9800202415 /* ParauParauTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7899F6E1943DF9800202415 /* ParauParau */ = {
+			isa = PBXGroup;
+			children = (
+				D7899F711943DF9800202415 /* AppDelegate.swift */,
+				D7899F731943DF9800202415 /* MasterViewController.swift */,
+				D7899F751943DF9800202415 /* DetailViewController.swift */,
+				D7899F771943DF9800202415 /* Main.storyboard */,
+				D7899F7A1943DF9800202415 /* Images.xcassets */,
+				D7899F6F1943DF9800202415 /* Supporting Files */,
+			);
+			path = ParauParau;
+			sourceTree = "<group>";
+		};
+		D7899F6F1943DF9800202415 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7899F701943DF9800202415 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7899F831943DF9800202415 /* ParauParauTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7899F861943DF9800202415 /* ParauParauTests.swift */,
+				D7899F841943DF9800202415 /* Supporting Files */,
+			);
+			path = ParauParauTests;
+			sourceTree = "<group>";
+		};
+		D7899F841943DF9800202415 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7899F851943DF9800202415 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7899F6B1943DF9800202415 /* ParauParau */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7899F8A1943DF9800202415 /* Build configuration list for PBXNativeTarget "ParauParau" */;
+			buildPhases = (
+				D7899F681943DF9800202415 /* Sources */,
+				D7899F691943DF9800202415 /* Frameworks */,
+				D7899F6A1943DF9800202415 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParauParau;
+			productName = ParauParau;
+			productReference = D7899F6C1943DF9800202415 /* ParauParau.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7899F7F1943DF9800202415 /* ParauParauTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7899F8D1943DF9800202415 /* Build configuration list for PBXNativeTarget "ParauParauTests" */;
+			buildPhases = (
+				D7899F7C1943DF9800202415 /* Sources */,
+				D7899F7D1943DF9800202415 /* Frameworks */,
+				D7899F7E1943DF9800202415 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7899F821943DF9800202415 /* PBXTargetDependency */,
+			);
+			name = ParauParauTests;
+			productName = ParauParauTests;
+			productReference = D7899F801943DF9800202415 /* ParauParauTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7899F641943DF9800202415 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = teriiehina;
+				TargetAttributes = {
+					D7899F6B1943DF9800202415 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					D7899F7F1943DF9800202415 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = D7899F6B1943DF9800202415;
+					};
+				};
+			};
+			buildConfigurationList = D7899F671943DF9800202415 /* Build configuration list for PBXProject "ParauParau" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7899F631943DF9800202415;
+			productRefGroup = D7899F6D1943DF9800202415 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7899F6B1943DF9800202415 /* ParauParau */,
+				D7899F7F1943DF9800202415 /* ParauParauTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7899F6A1943DF9800202415 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7899F791943DF9800202415 /* Main.storyboard in Resources */,
+				D7899F7B1943DF9800202415 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7899F7E1943DF9800202415 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7899F681943DF9800202415 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7899F761943DF9800202415 /* DetailViewController.swift in Sources */,
+				D7899F741943DF9800202415 /* MasterViewController.swift in Sources */,
+				D7899F721943DF9800202415 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7899F7C1943DF9800202415 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7899F871943DF9800202415 /* ParauParauTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7899F821943DF9800202415 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7899F6B1943DF9800202415 /* ParauParau */;
+			targetProxy = D7899F811943DF9800202415 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7899F771943DF9800202415 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7899F781943DF9800202415 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7899F881943DF9800202415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7899F891943DF9800202415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7899F8B1943DF9800202415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = ParauParau/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7899F8C1943DF9800202415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = ParauParau/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D7899F8E1943DF9800202415 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParauParau.app/ParauParau";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ParauParauTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		D7899F8F1943DF9800202415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParauParau.app/ParauParau";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ParauParauTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7899F671943DF9800202415 /* Build configuration list for PBXProject "ParauParau" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7899F881943DF9800202415 /* Debug */,
+				D7899F891943DF9800202415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7899F8A1943DF9800202415 /* Build configuration list for PBXNativeTarget "ParauParau" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7899F8B1943DF9800202415 /* Debug */,
+				D7899F8C1943DF9800202415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7899F8D1943DF9800202415 /* Build configuration list for PBXNativeTarget "ParauParauTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7899F8E1943DF9800202415 /* Debug */,
+				D7899F8F1943DF9800202415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7899F641943DF9800202415 /* Project object */;
+}
