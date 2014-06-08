@@ -18,14 +18,17 @@ PODS:
   - AFNetworking/UIKit (2.2.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - DateTools (1.2.0)
   - STTwitter (0.1.3)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - DateTools
   - STTwitter
 
 SPEC CHECKSUMS:
   AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
+  DateTools: 1765514cd526b2c2ab491b7747df67e0a82e97c1
   STTwitter: cbfe847b9dc263e6206fc1e92ce325764bbbc18b
 
 COCOAPODS: 0.33.1

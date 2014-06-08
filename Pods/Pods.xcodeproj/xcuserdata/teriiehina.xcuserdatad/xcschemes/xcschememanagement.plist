@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-ParauParau-DateTools.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ParauParau-STTwitter.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>682C50ABA4A94D66A3E572C7</key>
+		<key>7F2B4B86DB86434AAAAADB21</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>74F19DA6FEFE4D61A1C3F8AD</key>
+		<key>B00D9FFF6AEA4D3CB281863A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FF428903A2C74091B44B39E9</key>
+		<key>EFE1481AFE6645D392D2C6BE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FCBA60D85EC646D48283EA39</key>
 		<dict>
 			<key>primary</key>
 			<true/>
