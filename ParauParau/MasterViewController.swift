@@ -11,19 +11,49 @@ import UIKit
 class MasterViewController: UITableViewController {
 
     var objects = NSMutableArray()
+    var twitterApi: STTwitterAPI!
+    
+    init(coder aDecoder: NSCoder!)
+    {
 
+        self.twitterApi = STTwitterAPI(OAuthConsumerKey: "",
+            consumerSecret: "",
+            username: "",
+            password: "")
+        
+        super.init(coder: aDecoder);
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
     }
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
 
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
         self.navigationItem.rightBarButtonItem = addButton
+    }
+    
+    override func viewDidAppear(animated: Bool)
+    {
+        super.viewDidAppear(animated)
+        
+        let handleSuccess = {(username: String!) -> Void in
+        
+            println("youpi")
+        }
+        
+        let handleError = {(error: NSError!) -> Void in
+        
+            println(error)
+        }
+
+        self.twitterApi.verifyCredentialsWithSuccessBlock(handleSuccess, errorBlock: handleError)
+        
     }
 
     override func didReceiveMemoryWarning() {

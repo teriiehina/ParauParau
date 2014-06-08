@@ -39,6 +39,7 @@
 		D7899F801943DF9800202415 /* ParauParauTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParauParauTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7899F851943DF9800202415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7899F861943DF9800202415 /* ParauParauTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParauParauTests.swift; sourceTree = "<group>"; };
+		D7899F901943E22000202415 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +92,7 @@
 		D7899F6E1943DF9800202415 /* ParauParau */ = {
 			isa = PBXGroup;
 			children = (
+				D7899F901943E22000202415 /* Bridging-Header.h */,
 				D7899F711943DF9800202415 /* AppDelegate.swift */,
 				D7899F731943DF9800202415 /* MasterViewController.swift */,
 				D7899F751943DF9800202415 /* DetailViewController.swift */,
@@ -382,6 +384,7 @@
 				INFOPLIST_FILE = ParauParau/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ParauParau/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -394,6 +397,7 @@
 				INFOPLIST_FILE = ParauParau/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ParauParau/Bridging-Header.h";
 			};
 			name = Release;
 		};
