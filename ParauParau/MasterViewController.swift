@@ -14,8 +14,16 @@ class MasterViewController: UITableViewController {
   var twitterApi: STTwitterAPI!
   var tweets = PRPStatus[]()
   
+  var labelToComputeCellHeight: UILabel
+  
   init(coder aDecoder: NSCoder!)
   {
+    self.labelToComputeCellHeight       = UILabel()
+    self.labelToComputeCellHeight.font  = UIFont.systemFontOfSize(13)
+    
+    self.labelToComputeCellHeight.numberOfLines = 0
+    self.labelToComputeCellHeight.lineBreakMode = .ByTruncatingTail
+    
     self.twitterApi = STTwitterAPI.twitterAPIOSWithFirstAccount()
     super.init(coder: aDecoder);
   }
@@ -75,6 +83,17 @@ class MasterViewController: UITableViewController {
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
   {
     return self.tweets.count
+  }
+  
+  override func tableView(tableView: UITableView!, heightForRowAtIndexPath indexPath: NSIndexPath!) -> CGFloat
+  {
+    var tweet   = self.tweets[indexPath.row] as PRPStatus
+    let minHeight = 80 as CGFloat
+    
+    self.labelToComputeCellHeight.text  = tweet.text
+    var computedHeight = self.labelToComputeCellHeight.sizeThatFits(CGSize(width: 384, height: 1000)).height + 33
+    
+    return computedHeight > minHeight ? computedHeight : minHeight
   }
   
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell

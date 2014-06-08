@@ -19,7 +19,9 @@ class PRPStatusTableViewCell: UITableViewCell {
     didSet
     {
       self.statusLabel.text   = status.text
-      self.avatarHandle.text  = status.avatarName + status.date.description
+      self.statusLabel.sizeToFit()
+      
+      self.avatarHandle.text  = status.avatarName + ", " + status.date.timeAgoSinceNow()
       
       self.avatarImage.setImageWithURL(status.avatarURL)
     }

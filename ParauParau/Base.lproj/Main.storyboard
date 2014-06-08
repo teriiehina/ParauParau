@@ -43,7 +43,7 @@
                                                 <constraint firstAttribute="height" constant="48" id="Xou-gf-mm6"/>
                                             </constraints>
                                         </imageView>
-                                        <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="384" translatesAutoresizingMaskIntoConstraints="NO" id="PB1-fc-Qmh">
+                                        <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="384" translatesAutoresizingMaskIntoConstraints="NO" id="PB1-fc-Qmh">
                                             <rect key="frame" x="76" y="23" width="384" height="61"/>
                                             <accessibility key="accessibilityConfiguration">
                                                 <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
@@ -61,7 +61,6 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="k3K-mV-qDd" firstAttribute="top" secondItem="d3P-M7-ByW" secondAttribute="top" constant="21" id="3X4-cp-kwJ"/>
-                                        <constraint firstAttribute="bottom" secondItem="PB1-fc-Qmh" secondAttribute="bottom" constant="18" id="Fg0-MO-l4P"/>
                                         <constraint firstItem="PB1-fc-Qmh" firstAttribute="leading" secondItem="k3K-mV-qDd" secondAttribute="trailing" constant="8" id="h0d-8b-nfS"/>
                                         <constraint firstItem="PB1-fc-Qmh" firstAttribute="leading" secondItem="k3K-mV-qDd" secondAttribute="trailing" constant="8" id="kIK-rn-LhV"/>
                                         <constraint firstItem="k3K-mV-qDd" firstAttribute="leading" secondItem="d3P-M7-ByW" secondAttribute="leading" constant="20" id="kf6-Ut-oNC"/>
