@@ -36,16 +36,29 @@
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k3K-mV-qDd">
+                                        <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k3K-mV-qDd">
                                             <rect key="frame" x="20" y="21" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="748-oq-47P"/>
+                                                <constraint firstAttribute="height" constant="64" id="Xou-gf-mm6"/>
+                                            </constraints>
                                         </imageView>
-                                        <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="PB1-fc-Qmh">
-                                            <rect key="frame" x="92" y="22" width="300" height="62"/>
+                                        <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="368" translatesAutoresizingMaskIntoConstraints="NO" id="PB1-fc-Qmh">
+                                            <rect key="frame" x="92" y="23" width="368" height="61"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="k3K-mV-qDd" firstAttribute="top" secondItem="d3P-M7-ByW" secondAttribute="top" constant="21" id="3X4-cp-kwJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="PB1-fc-Qmh" secondAttribute="bottom" constant="18" id="Fg0-MO-l4P"/>
+                                        <constraint firstItem="PB1-fc-Qmh" firstAttribute="leading" secondItem="k3K-mV-qDd" secondAttribute="trailing" constant="8" id="h0d-8b-nfS"/>
+                                        <constraint firstItem="PB1-fc-Qmh" firstAttribute="leading" secondItem="k3K-mV-qDd" secondAttribute="trailing" constant="8" id="kIK-rn-LhV"/>
+                                        <constraint firstItem="k3K-mV-qDd" firstAttribute="leading" secondItem="d3P-M7-ByW" secondAttribute="leading" constant="20" id="kf6-Ut-oNC"/>
+                                        <constraint firstAttribute="trailing" secondItem="PB1-fc-Qmh" secondAttribute="trailing" constant="20" id="qdp-9a-BG4"/>
+                                        <constraint firstItem="PB1-fc-Qmh" firstAttribute="top" secondItem="d3P-M7-ByW" secondAttribute="top" constant="23" id="qmz-1Y-YsY"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -64,7 +77,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="605" y="62"/>
+            <point key="canvasLocation" x="605" y="61"/>
         </scene>
         <!--Detail View Controller - Detail-->
         <scene sceneID="Cn3-H9-jdl">

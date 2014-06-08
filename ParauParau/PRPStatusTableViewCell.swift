@@ -13,6 +13,15 @@ class PRPStatusTableViewCell: UITableViewCell {
   @IBOutlet var statusLabel: UILabel
   @IBOutlet var avatarImage: UIImageView
   
+  var status: PRPStatus!
+  {
+    didSet
+    {
+      self.statusLabel.text = status.text
+      self.avatarImage.setImageWithURL(status.avatarURL)
+    }
+  }
+  
   init(style: UITableViewCellStyle, reuseIdentifier: String)
   {
     super.init(style: style, reuseIdentifier: reuseIdentifier)

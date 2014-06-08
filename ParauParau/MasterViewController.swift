@@ -81,7 +81,7 @@ class MasterViewController: UITableViewController {
   {
     let cell = tableView.dequeueReusableCellWithIdentifier("StatusCell", forIndexPath: indexPath) as PRPStatusTableViewCell
     
-    cell.statusLabel.text = self.tweets[indexPath.row].text
+    cell.status = self.tweets[indexPath.row]
     
     return cell
   }
@@ -91,11 +91,15 @@ class MasterViewController: UITableViewController {
     return false
   }
   
-  override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-    if editingStyle == .Delete {
+  override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
+  {
+    if editingStyle == .Delete
+    {
       objects.removeObjectAtIndex(indexPath.row)
       tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-    } else if editingStyle == .Insert {
+    }
+    else if editingStyle == .Insert
+    {
       // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }
   }
@@ -110,6 +114,7 @@ class MasterViewController: UITableViewController {
   func fetchTweets()
   {
     let handleSuccess = {(tweets: AnyObject[]!) -> Void in
+      
       for tweet : AnyObject in tweets
       {
         let status = PRPStatus(status: tweet)

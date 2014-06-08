@@ -7,3 +7,4 @@
 //
 
 #import <STTwitter/STTwitter.h>
+#import <AFNetworking/UIImageView+AFNetworking.h>
