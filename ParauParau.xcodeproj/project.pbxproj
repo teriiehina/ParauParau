@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A82D00706F74A92904B20BE /* libPods-ParauParau.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B90ECE86BB6345429070B764 /* libPods-ParauParau.a */; };
 		D780F8961943F0CC00F57DB5 /* PRPStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D780F8951943F0CC00F57DB5 /* PRPStatus.swift */; };
+		D780F8981943F3F900F57DB5 /* PRPStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D780F8971943F3F900F57DB5 /* PRPStatusTableViewCell.swift */; };
 		D7899F721943DF9800202415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7899F711943DF9800202415 /* AppDelegate.swift */; };
 		D7899F741943DF9800202415 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7899F731943DF9800202415 /* MasterViewController.swift */; };
 		D7899F761943DF9800202415 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7899F751943DF9800202415 /* DetailViewController.swift */; };
@@ -31,6 +32,7 @@
 		10940F54A4F0424FAAE66C40 /* Pods-ParauParau.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParauParau.xcconfig"; path = "Pods/Pods-ParauParau.xcconfig"; sourceTree = "<group>"; };
 		B90ECE86BB6345429070B764 /* libPods-ParauParau.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ParauParau.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D780F8951943F0CC00F57DB5 /* PRPStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRPStatus.swift; sourceTree = "<group>"; };
+		D780F8971943F3F900F57DB5 /* PRPStatusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRPStatusTableViewCell.swift; sourceTree = "<group>"; };
 		D7899F6C1943DF9800202415 /* ParauParau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParauParau.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7899F701943DF9800202415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7899F711943DF9800202415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				D7899F711943DF9800202415 /* AppDelegate.swift */,
 				D7899F731943DF9800202415 /* MasterViewController.swift */,
 				D780F8951943F0CC00F57DB5 /* PRPStatus.swift */,
+				D780F8971943F3F900F57DB5 /* PRPStatusTableViewCell.swift */,
 				D7899F751943DF9800202415 /* DetailViewController.swift */,
 				D7899F771943DF9800202415 /* Main.storyboard */,
 				D7899F7A1943DF9800202415 /* Images.xcassets */,
@@ -269,6 +272,7 @@
 				D7899F761943DF9800202415 /* DetailViewController.swift in Sources */,
 				D7899F741943DF9800202415 /* MasterViewController.swift in Sources */,
 				D7899F721943DF9800202415 /* AppDelegate.swift in Sources */,
+				D780F8981943F3F900F57DB5 /* PRPStatusTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

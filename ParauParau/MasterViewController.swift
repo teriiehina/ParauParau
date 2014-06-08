@@ -79,16 +79,16 @@ class MasterViewController: UITableViewController {
   
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
   {
-    let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+    let cell = tableView.dequeueReusableCellWithIdentifier("StatusCell", forIndexPath: indexPath) as PRPStatusTableViewCell
     
-    cell.textLabel.text = self.tweets[indexPath.row].text
+    cell.statusLabel.text = self.tweets[indexPath.row].text
     
     return cell
   }
   
-  override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-    // Return false if you do not want the specified item to be editable.
-    return true
+  override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
+  {
+    return false
   }
   
   override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
@@ -100,31 +100,30 @@ class MasterViewController: UITableViewController {
     }
   }
   
+  override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!)
+  {
+    tableView.deselectRowAtIndexPath(indexPath, animated: true)
+  }
   
   // #pragma mark - Twitter
   
   func fetchTweets()
   {
-    
     let handleSuccess = {(tweets: AnyObject[]!) -> Void in
-      
       for tweet : AnyObject in tweets
       {
         let status = PRPStatus(status: tweet)
         self.tweets.append(status)
       }
 
-      println("cool")
       self.tableView.reloadData()
     }
     
     let handleError = {(error: NSError!) -> Void in
-      
       println(error)
     }
     
     self.twitterApi.getHomeTimelineSinceID(nil, count: 100, successBlock: handleSuccess, errorBlock: handleError)
-    
   }
   
   func postNewTweet(sender: UIControl)
