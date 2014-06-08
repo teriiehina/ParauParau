@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A82D00706F74A92904B20BE /* libPods-ParauParau.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B90ECE86BB6345429070B764 /* libPods-ParauParau.a */; };
 		D7899F721943DF9800202415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7899F711943DF9800202415 /* AppDelegate.swift */; };
 		D7899F741943DF9800202415 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7899F731943DF9800202415 /* MasterViewController.swift */; };
 		D7899F761943DF9800202415 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7899F751943DF9800202415 /* DetailViewController.swift */; };
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10940F54A4F0424FAAE66C40 /* Pods-ParauParau.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParauParau.xcconfig"; path = "Pods/Pods-ParauParau.xcconfig"; sourceTree = "<group>"; };
+		B90ECE86BB6345429070B764 /* libPods-ParauParau.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ParauParau.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7899F6C1943DF9800202415 /* ParauParau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParauParau.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7899F701943DF9800202415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7899F711943DF9800202415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A82D00706F74A92904B20BE /* libPods-ParauParau.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +60,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21247F9A38DB465CA1E2C61F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B90ECE86BB6345429070B764 /* libPods-ParauParau.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D7899F631943DF9800202415 = {
 			isa = PBXGroup;
 			children = (
 				D7899F6E1943DF9800202415 /* ParauParau */,
 				D7899F831943DF9800202415 /* ParauParauTests */,
 				D7899F6D1943DF9800202415 /* Products */,
+				21247F9A38DB465CA1E2C61F /* Frameworks */,
+				10940F54A4F0424FAAE66C40 /* Pods-ParauParau.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7899F8A1943DF9800202415 /* Build configuration list for PBXNativeTarget "ParauParau" */;
 			buildPhases = (
+				EE65D0BA9B7747EEB7B8F2CA /* Check Pods Manifest.lock */,
 				D7899F681943DF9800202415 /* Sources */,
 				D7899F691943DF9800202415 /* Frameworks */,
 				D7899F6A1943DF9800202415 /* Resources */,
+				5FD0A06EF11A4AB49BB0D75C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,6 +221,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FD0A06EF11A4AB49BB0D75C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ParauParau-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE65D0BA9B7747EEB7B8F2CA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D7899F681943DF9800202415 /* Sources */ = {
@@ -326,6 +375,7 @@
 		};
 		D7899F8B1943DF9800202415 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10940F54A4F0424FAAE66C40 /* Pods-ParauParau.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -337,6 +387,7 @@
 		};
 		D7899F8C1943DF9800202415 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10940F54A4F0424FAAE66C40 /* Pods-ParauParau.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -401,6 +452,7 @@
 				D7899F8C1943DF9800202415 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7899F8D1943DF9800202415 /* Build configuration list for PBXNativeTarget "ParauParauTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +461,7 @@
 				D7899F8F1943DF9800202415 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
