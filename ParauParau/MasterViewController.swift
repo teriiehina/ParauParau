@@ -12,14 +12,12 @@ class MasterViewController: UITableViewController {
 
     var objects = NSMutableArray()
     var twitterApi: STTwitterAPI!
+    var tweets: AnyObject[]!
     
     init(coder aDecoder: NSCoder!)
     {
 
-        self.twitterApi = STTwitterAPI(OAuthConsumerKey: "",
-            consumerSecret: "",
-            username: "",
-            password: "")
+        self.twitterApi = STTwitterAPI.twitterAPIOSWithFirstAccount()
         
         super.init(coder: aDecoder);
     }
@@ -45,6 +43,7 @@ class MasterViewController: UITableViewController {
         let handleSuccess = {(username: String!) -> Void in
         
             println("youpi")
+            self.fetchTweets()
         }
         
         let handleError = {(error: NSError!) -> Void in
@@ -86,15 +85,25 @@ class MasterViewController: UITableViewController {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects.count
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        if self.tweets
+        {
+            return self.tweets.count
+        }
+        else
+        {
+            return 0
+        }
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
 
-        let object = objects[indexPath.row] as NSDate
-        cell.textLabel.text = object.description
+        let object : AnyObject  = self.tweets[indexPath.row] as AnyObject
+        var text : String!      = object.valueForKey("text") as String!
+        
+        cell.textLabel.text = text
         return cell
     }
 
@@ -113,5 +122,25 @@ class MasterViewController: UITableViewController {
     }
 
 
+    // #pragma mark - Twitter
+    
+    func fetchTweets()
+    {
+        
+        let handleSuccess = {(tweets: AnyObject[]!) -> Void in
+            
+            self.tweets = tweets
+            println("cool")
+            self.tableView.reloadData()
+        }
+        
+        let handleError = {(error: NSError!) -> Void in
+            
+            println(error)
+        }
+        
+        self.twitterApi.getHomeTimelineSinceID(nil, count: 100, successBlock: handleSuccess, errorBlock: handleError)
+        
+    }
 }
 

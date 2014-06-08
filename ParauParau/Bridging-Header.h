@@ -6,4 +6,4 @@
 //  Copyright (c) 2014 teriiehina. All rights reserved.
 //
 
-#import <STTwitter/STTwitter.h>ee
+#import <STTwitter/STTwitter.h>
