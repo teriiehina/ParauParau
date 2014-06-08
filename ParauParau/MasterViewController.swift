@@ -115,6 +115,7 @@ class MasterViewController: UITableViewController {
   {
     let handleSuccess = {(tweets: AnyObject[]!) -> Void in
       
+      println (tweets[0])
       for tweet : AnyObject in tweets
       {
         let status = PRPStatus(status: tweet)

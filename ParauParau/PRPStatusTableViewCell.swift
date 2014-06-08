@@ -10,14 +10,17 @@ import UIKit
 
 class PRPStatusTableViewCell: UITableViewCell {
   
-  @IBOutlet var statusLabel: UILabel
-  @IBOutlet var avatarImage: UIImageView
+  @IBOutlet var statusLabel:  UILabel
+  @IBOutlet var avatarHandle: UILabel
+  @IBOutlet var avatarImage:  UIImageView
   
   var status: PRPStatus!
   {
     didSet
     {
-      self.statusLabel.text = status.text
+      self.statusLabel.text   = status.text
+      self.avatarHandle.text  = status.avatarName + status.date.description
+      
       self.avatarImage.setImageWithURL(status.avatarURL)
     }
   }
