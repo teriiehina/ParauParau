@@ -12,7 +12,7 @@ class MasterViewController: UITableViewController {
   
   var objects = NSMutableArray()
   var twitterApi: STTwitterAPI!
-  var tweets: AnyObject[]!
+  var tweets = PRPStatus[]()
   
   init(coder aDecoder: NSCoder!)
   {
@@ -74,17 +74,15 @@ class MasterViewController: UITableViewController {
   
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
   {
-    return self.tweets ? self.tweets.count : 0
+    return self.tweets.count
   }
   
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
   {
     let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
     
-    let object : AnyObject  = self.tweets[indexPath.row] as AnyObject
-    var text : String!      = object.valueForKey("text") as String!
+    cell.textLabel.text = self.tweets[indexPath.row].text
     
-    cell.textLabel.text = text
     return cell
   }
   
@@ -110,7 +108,12 @@ class MasterViewController: UITableViewController {
     
     let handleSuccess = {(tweets: AnyObject[]!) -> Void in
       
-      self.tweets = tweets
+      for tweet : AnyObject in tweets
+      {
+        let status = PRPStatus(status: tweet)
+        self.tweets.append(status)
+      }
+
       println("cool")
       self.tableView.reloadData()
     }
